@@ -1,2 +1,6 @@
-# hangry
- Open source meal prep and planner 
+# Hangry
+## Open source meal prep and planner
+
+Simple UI, using HTMX, Express
+
+
