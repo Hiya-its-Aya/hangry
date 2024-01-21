@@ -15,6 +15,10 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler));
 
 
+app.use(express.urlencoded({extended:true}))
+
+app.use(express.json())
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });

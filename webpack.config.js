@@ -17,5 +17,18 @@ module.exports = {
   ],
   devServer: {
     hot: true
-  }
+  },
+  module: {
+    rules: [
+      // ... other rules ...
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
+      },
+    ],
+  },
 };

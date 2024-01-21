@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./index.js"></script>
+  <!-- <script src="./index.js"></script> -->
   <title>Document</title>
 </head>
-<body>
-  <input type="text" name="q"
-    hx-get="/trigger_delay"
-    hx-trigger="keyup changed delay:500ms"
-    hx-target="#search-results"
-    placeholder="Search..."
->
-<div id="search-results"></div>
-  
+<body >
+  <div class="text-center">
+    <h1 class="text-2xl font bold my-5">Hangry</h1>
+    <button hx-get="/users" 
+      hx-swap="outerHTML"
+      class="bg-green-500 text-white py-2 px-3 my-5 rounded">Submit
+    </button>
+    
+    <input type="text" name="q"
+      hx-get="/trigger_delay"
+      hx-trigger="keyup changed delay:500ms"
+      hx-target="#search-results"
+      placeholder="Search..."
+    >
+    <div class="result-container"></div>
+  <div id="search-results"></div>
+</div>  
 </body>
 </html>
