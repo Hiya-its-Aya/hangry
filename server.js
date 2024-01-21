@@ -19,6 +19,9 @@ app.use(express.urlencoded({extended:true}))
 
 app.use(express.json())
 
+//set up database and create middlewear
+
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
