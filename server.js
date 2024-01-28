@@ -21,7 +21,11 @@ app.use(express.json())
 
 //set up database and create middlewear
 
+//db holds user input of indgredients and 
+
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+
